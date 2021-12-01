@@ -1,0 +1,48 @@
+<%@ page language="java" import="java.util.*,yanshuo.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'validate.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+  </head>
+  
+  <body>
+  <%! UserManager userManager=new UserManager(); %>
+    <% request.setCharacterEncoding("utf-8");
+       String username=request.getParameter("username");
+       String password=request.getParameter("password");
+       int r=userManager.login(username,password);
+       if(r==0){ %>
+       Hi,<%=username %>
+      <table border="1">
+      <caption>用户列表</caption>
+      <tr><th>用户名</th><th>密码</th></tr>
+      <% Iterator<User> iter=userManager.getUserList().iterator();
+         while(iter.hasNext()){
+         User user=iter.next();%>
+         <tr><td><%=user.username %></td><td><%=user.password %></td></tr>
+      <% } %> 
+      </table>   
+     <%  }else if(r==1){ %>
+             密码错误，请<a href="login.html">重新登录</a>
+   <%    }else{   %>
+    用户名不存在，请<a href="login.html">重新登录</a>   
+    <%  } %>   
+  </body>
+</html>

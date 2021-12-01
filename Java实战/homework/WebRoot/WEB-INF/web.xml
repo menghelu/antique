@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>indexServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.indexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>loginservlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.loginservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>registerservlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.registerservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.add</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>delete</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.delete</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>manager_loginServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.manager_loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>insertBook_Servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.insertBook_Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteBook_Servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.deleteBook_Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteRecord_Servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.deleteRecord_Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>YzmServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>yanshuo.YzmServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>indexServlet</servlet-name>
+    <url-pattern>/servlet/indexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/servlet/loginservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerservlet</servlet-name>
+    <url-pattern>/servlet/registerservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/servlet/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/servlet/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>manager_loginServlet</servlet-name>
+    <url-pattern>/servlet/manager_loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>insertBook_Servlet</servlet-name>
+    <url-pattern>/servlet/insertBook_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteBook_Servlet</servlet-name>
+    <url-pattern>/servlet/deleteBook_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteRecord_Servlet</servlet-name>
+    <url-pattern>/servlet/deleteRecord_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YzmServlet</servlet-name>
+    <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

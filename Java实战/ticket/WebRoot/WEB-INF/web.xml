@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>meng.loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>meng.registerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>add_recordServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>meng.add_recordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>select_recordServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>meng.select_recordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteTicket_Servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>meng.deleteTicket_Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>gaiqian_servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>meng.gaiqian_servlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/servlet/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/servlet/registerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>add_recordServlet</servlet-name>
+    <url-pattern>/servlet/add_recordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>select_recordServlet</servlet-name>
+    <url-pattern>/servlet/select_recordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteTicket_Servlet</servlet-name>
+    <url-pattern>/servlet/deleteTicket_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>gaiqian_servlet</servlet-name>
+    <url-pattern>/servlet/gaiqian_servlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>register.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  <h2>学生账号申请</h2>
+    <form action="servlet/registerservlet" method="post">
+&nbsp;&nbsp;&nbsp;学&nbsp;&nbsp;号&nbsp;&nbsp;&nbsp;<input type="text" name="id"/><br>
+ &nbsp;&nbsp;&nbsp;姓&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;<input type="text" name="username"/><br>
+&nbsp;&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;<input type="password" name="password"/><br>
+确认密码<input type="password" name="password1"/><br>
+&nbsp;&nbsp;&nbsp;性&nbsp;&nbsp;别&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="男" checked="true">男</input>
+   
+   <input type="radio" name="sex" value="女" checked="true">女</input><br>
+&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;级&nbsp;&nbsp;&nbsp;<input type="text" name="grade"/><br>
+&nbsp;&nbsp;&nbsp;专&nbsp;&nbsp;业&nbsp;&nbsp;&nbsp;<input type="text" name="major"/><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="确定"/>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;  <input  type="reset"  value="重置" />
+    
+    </form>
+  </body>
+</html>

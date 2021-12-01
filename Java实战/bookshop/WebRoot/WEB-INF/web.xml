@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>addLiuyan_servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>chj.addLiuyan_servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyedServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>chj.buyedServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>addLiuyan_servlet</servlet-name>
+    <url-pattern>/servlet/addLiuyan_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyedServlet</servlet-name>
+    <url-pattern>/servlet/buyedServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

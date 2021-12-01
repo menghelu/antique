@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>gu.login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>add_servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>gu.add_servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>delete_servlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>gu.delete_servlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/servlet/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>add_servlet</servlet-name>
+    <url-pattern>/servlet/add_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete_servlet</servlet-name>
+    <url-pattern>/servlet/delete_servlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
